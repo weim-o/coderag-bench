@@ -1,0 +1,26 @@
+[workspace]
+authors = ["dyf <dyf@example.com>"]
+channels = ["conda-forge"]
+name = "coderag-bench"
+platforms = ["linux-64"]
+version = "0.1.0"
+preview = ["pixi-build"]
+
+[tasks]
+start = "main"
+
+[dependencies]
+coderag-bench = { path = "." }
+
+[package]
+name = "coderag-bench"
+version = "0.1.0"
+
+[package.build] 
+backend = { name = "pixi-build-python", version = "==0.3.2" }
+
+[package.host-dependencies]
+hatchling = "==1.26.3"
+
+[pypi-dependencies]
+docker = ">=7.1.0, <8"

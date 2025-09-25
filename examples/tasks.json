@@ -1,0 +1,8 @@
+[
+    {
+        "task_name": "aad-fastapi-dlg/0",
+        "path": "aad-fastapi-dlg/aad_fastapi_dlg-0.0.3/tests/test_oauth2_scheme.py",
+        "line": 24,
+        "gt": "    options.authority = \"https://login.microsoftonline.com/tenant_id\""
+    }
+]
