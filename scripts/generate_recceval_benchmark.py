@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import TypedDict
 import json
 from itertools import tee
+from pathlib import Path
 
 
 
@@ -35,6 +36,7 @@ def main():
                     "input": "\n".join(input_lines) + "\n"
                 })
                 
+    Path("cache").mkdir(exist_ok=True)
     with open("cache/map_file.json", "w") as f:
         json.dump(map_objs, f, indent=4)
     with open("cache/recceval_benchmark.jsonl", "w") as f:
